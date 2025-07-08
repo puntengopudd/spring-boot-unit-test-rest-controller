@@ -1,0 +1,507 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1335.v6b_a_a_e18534e1">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/bezkoder-spring-boot-unit-test-rest-controller/target/surefire-reports/TEST-com.bezkoder.spring.test.SpringBootRestControllerUnitTestApplicationTests.xml</file>
+      <name>com.bezkoder.spring.test.SpringBootRestControllerUnitTestApplicationTests</name>
+      <duration>44.944</duration>
+      <startTime>-1</startTime>
+      <properties/>
+      <time>44.944</time>
+      <nodeId>39</nodeId>
+      <enclosingBlocks>
+        <string>31</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Unit Test &amp; Coverage</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>2.78</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.SpringBootRestControllerUnitTestApplicationTests</className>
+          <testName>contextLoads</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>07:47:08.011 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bezkoder.spring.test.SpringBootRestControllerUnitTestApplicationTests]: SpringBootRestControllerUnitTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:47:09.164 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @Sp
+...[truncated 3562 chars]...
+queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-08T07:47:48.041Z  INFO 2901 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at &apos;/h2-ui&apos;. Database available at &apos;jdbc:h2:mem:testdb&apos;
+2025-07-08T07:47:48.227Z  INFO 2901 --- [           main] otRestControllerUnitTestApplicationTests : Started SpringBootRestControllerUnitTestApplicationTests in 36.922 seconds (process running for 45.747)
+</stdout>
+          <stderr>WARNING: A Java agent has been loaded dynamically (/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/workspace/bezkoder-spring-boot-unit-test-rest-controller/target/surefire-reports/TEST-com.bezkoder.spring.test.TutorialControllerTests.xml</file>
+      <name>com.bezkoder.spring.test.TutorialControllerTests</name>
+      <duration>5.735</duration>
+      <startTime>-1</startTime>
+      <properties/>
+      <time>5.735</time>
+      <nodeId>39</nodeId>
+      <enclosingBlocks>
+        <string>31</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Unit Test &amp; Coverage</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>2.255</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>2025-07-08T07:47:51.228Z  INFO 2901 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bezkoder.spring.test.TutorialControllerTests]: TutorialControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-08T07:47:51.328Z  INFO 2901 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bezkoder.spring.test.Sprin
+...[truncated 1937 chars]...
+ew = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:1,&quot;title&quot;:&quot;Spring Boot @WebMvcTest&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;published&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.062</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnNoContentWhenFilter</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tutorials
+       Parameters = {title=[BezKoder]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#getAllTutorials(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.178</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnListOfTutorialsWithFilter</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tutorials
+       Parameters = {title=[Boot]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#getAllTutorials(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+      
+...[truncated 124 chars]...
+ponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:1,&quot;title&quot;:&quot;Spring Boot @WebMvcTest&quot;,&quot;description&quot;:&quot;Description 1&quot;,&quot;published&quot;:true},{&quot;id&quot;:3,&quot;title&quot;:&quot;Spring Boot Web MVC&quot;,&quot;description&quot;:&quot;Description 3&quot;,&quot;published&quot;:true}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.02</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnNotFoundTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tutorials/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#getTutorialById(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.497</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldUpdateTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/tutorials/1
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;67&quot;]
+             Body = {&quot;id&quot;:1,&quot;title&quot;:&quot;Updated&quot;,&quot;description&quot;:&quot;Updated&quot;,&quot;published&quot;:true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#updateTutorial(long, Tutorial)
+
+...[truncated 140 chars]...
+null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:1,&quot;title&quot;:&quot;Updated&quot;,&quot;description&quot;:&quot;Updated&quot;,&quot;published&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldCreateTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/tutorials
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;87&quot;]
+             Body = {&quot;id&quot;:1,&quot;title&quot;:&quot;Spring Boot @WebMvcTest&quot;,&quot;description&quot;:&quot;Description&quot;,&quot;published&quot;:true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#createTutori
+...[truncated 41 chars]...
+false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnListOfTutorials</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/tutorials
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#getAllTutorials(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name 
+...[truncated 212 chars]...
+Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:1,&quot;title&quot;:&quot;Spring Boot @WebMvcTest 1&quot;,&quot;description&quot;:&quot;Description 1&quot;,&quot;published&quot;:true},{&quot;id&quot;:2,&quot;title&quot;:&quot;Spring Boot @WebMvcTest 2&quot;,&quot;description&quot;:&quot;Description 2&quot;,&quot;published&quot;:true},{&quot;id&quot;:3,&quot;title&quot;:&quot;Spring Boot @WebMvcTest 3&quot;,&quot;description&quot;:&quot;Description 3&quot;,&quot;published&quot;:true}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.045</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldDeleteAllTutorials</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/tutorials
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#deleteAllTutorials()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldDeleteTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/tutorials/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#deleteTutorial(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <startTime>-1</startTime>
+          <className>com.bezkoder.spring.test.TutorialControllerTests</className>
+          <testName>shouldReturnNotFoundUpdateTutorial</testName>
+          <skipped>false</skipped>
+          <keepTestNames>false</keepTestNames>
+          <properties/>
+          <stdout>
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/tutorials/1
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;67&quot;]
+             Body = {&quot;id&quot;:1,&quot;title&quot;:&quot;Updated&quot;,&quot;description&quot;:&quot;Updated&quot;,&quot;published&quot;:true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bezkoder.spring.test.controller.TutorialController
+           Method = com.bezkoder.spring.test.controller.TutorialController#updateTutorial(long, Tutorial)
+
+...[truncated 28 chars]...
+false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>50.679</duration>
+  <skipOldReports>false</skipOldReports>
+  <startTime>-1</startTime>
+  <stdioRetention>NONE</stdioRetention>
+  <keepTestNames>false</keepTestNames>
+  <keepProperties>false</keepProperties>
+</result>

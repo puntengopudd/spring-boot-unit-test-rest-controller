@@ -1,0 +1,80 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1540.v295eccc9778f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.43.0">
+          <spec></spec>
+        </com.cloudbees.jenkins.GitHubPushTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4150.ve20ca_b_a_a_2815">
+    <script>
+pipeline {
+  agent any
+  tools {
+    maven &apos;Maven 3.8.8&apos;       
+    jdk &apos;Temurin JDK 17&apos;
+  }
+
+  environment {
+    SONARQUBE_SERVER = &apos;SonarQube&apos; 
+  }
+
+  stages {
+    stage(&apos;Checkout&apos;) {
+      steps {
+        git url: &apos;https://github.com/puntengopudd/spring-boot-unit-test-rest-controller&apos;, branch: &apos;master&apos;
+      }
+    }
+
+    stage(&apos;Unit Test &amp; Coverage&apos;) {
+      steps {
+        sh &apos;mvn package&apos;
+      }
+      post {
+        always {
+          junit &apos;target/surefire-reports/*.xml&apos;
+        }
+      }
+    }
+
+    stage(&apos;Static Code Analysis (SAST) via Sonar&apos;) {
+      steps {
+        sh &quot;&quot;&quot;
+            mvn clean verify sonar:sonar \
+              -Dsonar.projectKey=bezkoder-test-2 \
+              -Dsonar.projectName=&apos;bezkoder-test-2&apos; \
+              -Dsonar.host.url=http://localhost:9001 \
+              -Dsonar.token=sqp_a05d9d06266463728cfa84cce7ddca612b3fc982
+        &quot;&quot;&quot;
+      }
+    }
+  }
+
+  post {
+    success {
+      echo &quot;Pipeline berhasil 🚀&quot;
+    }
+    failure {
+      echo &quot;Pipeline gagal 💥&quot;
+    }
+  }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
