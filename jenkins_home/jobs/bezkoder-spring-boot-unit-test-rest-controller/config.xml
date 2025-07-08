@@ -55,10 +55,10 @@ pipeline {
       steps {
         sh &quot;&quot;&quot;
             mvn clean verify sonar:sonar \
-              -Dsonar.projectKey=bezkoder-test-2 \
-              -Dsonar.projectName=&apos;bezkoder-test-2&apos; \
+              -Dsonar.projectKey=bezkoder-test \
+              -Dsonar.projectName=&apos;bezkoder-test&apos; \
               -Dsonar.host.url=http://localhost:9001 \
-              -Dsonar.token=sqp_a05d9d06266463728cfa84cce7ddca612b3fc982
+              -Dsonar.token=sqp_1ea845582e7538b07112bad18f3359f5ebf67ee2
         &quot;&quot;&quot;
       }
     }
